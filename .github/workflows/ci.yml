@@ -4,15 +4,15 @@ name: build-and-lint
 on:
   # Run when code is pushed to main or dev
   push:
-    branches: [main, dev]
+    branches: [main-yash, dev]
 
   # Run when a Pull Request targets main or dev
   pull_request:
-    branches: [main, dev]
+    branches: [main-yash, dev]
 
 jobs:
   build-and-lint:
-    # Run this job on a GitHub-hosted Ubuntu runner
+    # Run this job on a GitHub-hosted Ubuntu runnerxx
     runs-on: ubuntu-latest
 
     steps:

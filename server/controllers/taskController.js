@@ -13,7 +13,7 @@ const getAllTasks = async (req, res) => {
     console.error('Error fetching tasks:', error);
     res.status(500).json({
       success: false,
-      message: 'Failed to fetch tasks',
+      message: 'Failed to sss tasks',
     });
   }
 };
