@@ -2,6 +2,8 @@ const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 class TaskService {
   async getAllTasks() {
+    console.log("Fetching:", `${API_BASE_URL}/tasks`);
+
     const response = await fetch(`${API_BASE_URL}/tasks`);
 
     if (!response.ok) {
@@ -10,6 +12,7 @@ class TaskService {
 
     return await response.json();
   }
+
 
   async createTask(taskData) {
     const response = await fetch(`${API_BASE_URL}/tasks`, {
